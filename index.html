@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Profil - Moussa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image:
+      url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Fvecteurs-libre%2Fillustration-concept-service-ligne-mosquee_114360-11484.jpg%3Fsemt%3Dais_hybrid%26w%3D740&tbnid=Kx9Eu5x6mBZqyM&vet=1&imgrefurl=https%3A%2F%2Ffr.freepik.com%2Fphotos-vecteurs-libre%2Feducation-islamique&docid=_76k8Ol0nnstQM&w=740&h=740&hl=fr-FR&source=sh%2Fx%2Fim%2Fm1%2F4&kgs=30045d84ce2be190');
+      text-align: center;
+      padding: 40px;
+    }
+
+    .carte {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+      margin: auto;
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+    #plusInfos {
+      margin-top: 20px;
+      display: none;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carte">
+    <img src="https://drive.google.com/file/d/13tWdRqqTYHoPP6Q7TiANYklbt-2oPTLU/view?usp=drivesdk" alt="Photo de profil">
+    <h1>Moussa Saleh</h1>
+    <p>Étudiant | Passionné de technologie</p>
+
+    <button class="btn" onclick="afficherInfos()">Voir plus</button>
+
+    <div id="plusInfos">
+      <p>Je suis passionné par l'informatique, le business et la religion. Mon objectif est d'inspirer les gens.</p>
+      <p>Je crée des applications et je publie du contenu sur TikTok !</p>
+    </div>
+  </div>
+
+  <script>
+    function afficherInfos() {
+      let infos = document.getElementById("plusInfos");
+      if (infos.style.display === "none") {
+        infos.style.display = "block";
+      } else {
+        infos.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<div style="margin-top: 20px;">
+  <a href="https://www.tiktok.com/@moussasaleh002?_t=ZM-8wT1aTBCStK&_r=1" target="_blank">Mon TikTok</a> |
+  <a href="https://youtube.com/@al-amine229?si=Zj0uj1Ot-lCD5WSS" target="_blank">Mon YouTube</a>
+</div>
